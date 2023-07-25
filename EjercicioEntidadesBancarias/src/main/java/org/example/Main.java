@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -11,10 +10,10 @@ public class Main {
         while (opcionUsuario != 7){
             banco.mostrarMenu();
             opcionUsuario = sc.nextInt();
+            sc.nextLine();
             if (opcionUsuario == 1) {
                 System.out.println("Ingresa tu nombre: ");
                 String titular = sc.nextLine();
-                sc.nextLine();
                 System.out.println("Ingresa tu DNI: ");
                 int dni = sc.nextInt();
                 sc.nextLine();
